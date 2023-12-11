@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1> Vení al Gym 💪 </h1>
+    </header>
+    <form onsubmit="alert('Afiliacion iniciada! ')">
+        <fieldset>
+            <legend>🙋🏼‍♂️ Datos Personales 👀</legend>
+            <div>
+                <label for="uName">Nombre: <sup>*</sup></label>
+                <input id="uName" name="uName" type="text" required>
+            </div>
+            <div>
+                <label for="famName">Apellido: <sup>*</sup></label>
+                <input id="famName" name="famName" type="text" required>
+            </div>
+            <div>
+                <label for="dni">DNI: <sup>*</sup></label>
+                <input id="dni" name="dni" type="text" required>
+            </div>
+            <div>
+                <label for="country">Nacionalidad: <sup>*</sup></label>
+                <select id="country" name="country" required>
+                    <option value="AR">Argentina</option>
+                    <option value="CH">Chile</option>
+                    <option value="CO">Colombia</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="VE">Venezuela</option>
+                </select>
+            </div>
+            <div>
+                <label for="uAbout">Contanos un poco de vos... </label>
+                <textarea id="uAbout" name="uAbout" cols="20" rows="2"></textarea>
+            </div>
+            <div>
+                <label for="gender">Sexo: <sup>*</sup></label>
+                <div id="gender" name="gender" class="checkbox-card" required>
+                    <input type="radio" id="male" name="gender" value="male" class="cbox-class">
+                    <label for="M">Masculino</label>
+
+                    <input type="radio" id="female" name="gender" value="female" class="cbox-class">
+                    <label for="F">Femenino</label>
+
+                    <input type="radio" id="other" name="gender" value="other" class="cbox-class">
+                    <label for="O">Otro</label>
+                </div>
+            </div>
+        </fieldset>
+      
+        <fieldset>
+            <legend>📱 Datos de Contacto 📧</legend>
+            <div>
+                <label for="tel">Teléfono: </label>
+                <input id="tel" name="tel" type="text" placeholder="Codigo de area y numero">
+            </div>
+            <div>
+                <label for="mail">Dirección de correo electrónico<sup>*</sup> </label>
+                <input id="mail" name="mail" type="email" placeholder="Ej: mail@gmail.com" required>
+            </div>
+        </fieldset>
+        <fieldset class="activities-fs">
+            <legend>🚴 Actividades 🤸‍♂️</legend>
+            <p>Por favor, indicá cuales acrividades te interesan.</p>
+            <p for="palermo">Sede palermo:</p>
+            <div class="checkbox-card">
+                <input type="checkbox" id="cBoxOne" value="ba" class="cbox-class">
+                <label for="cBoxOne">Básquet</label>
+
+                <input type="checkbox" id="cBoxOne" value="bo" class="cbox-class">
+                <label for="cBoxOne">Boxeo</label>
+
+                <input type="checkbox" id="cBoxOne" value="fu" class="cbox-class">
+                <label for="cBoxOne">Fútbol</label>
+
+                <input type="checkbox" id="cBoxOne" value="te" class="cbox-class">
+                <label for="cBoxOne">Ténis</label>
+            </div>
+            <p for="rosario">Sede Rosario</p>
+            <div class="checkbox-card">
+                <input type="checkbox" id="cBoxTwo" value="ba" class="cbox-class">
+                <label for="cBoxTwo">Básquet</label>
+
+                <input type="checkbox" id="cBoxTwo" value="fu" class="cbox-class">
+                <label for="cBoxTwo">Fútbol</label>
+
+                <input type="checkbox" id="cBoxTwo" value="ru" class="cbox-class">
+                <label for="cBoxTwo">Rugby</label>
+
+                <input type="checkbox" id="cBoxTwo" value="vo" class="cbox-class">
+                <label for="cBoxTwo">Voley</label>
+            </div>
+        </fieldset>
+
+        <section class="tyc-flex">
+            <div class="checkbox-card">
+                <input type="checkbox" id="tyc" value="acepto" class="cbox-class" required>
+                <label for="tyc">Acepto las condiciones</label>
+            </div>
+            <div class="checkbox-card"> 
+                <input type="checkbox" id="newsletter" value="acepto" class="cbox-class" required>
+                <label for="newsletter">Deseo recibir novedades</label>
+            </div>
+            <p> *: campo obligatorio.</p>  
+        </section>
+        
+        <section class="btn-container">
+            <input type="submit" value="Iniciar Afiliacion" class="btn-input">
+            <input type="reset" value="Restablecer" class="btn-input">
+        </section>
+        
+    </form>
+    <button type="button" onclick="onClick()">
+        Cambiar estilo de CSS
+    </button>
+    <script src=""></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&family=Roboto:wght@400;700&display=swap');
+html{
+    font-size: 16px;
+}
+header h1{
+    border-top: 1rem solid #4d6d63;
+    border-right: 1rem solid #1F2023;
+    border-bottom: 1rem solid #4d6d63;
+    border-left: 1rem solid #1F2023;
+    color: #E8EAED;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+body {
+    background-color: #1F2023;
+    font-family: 'Roboto',sans-serif;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40rem;
+}
+fieldset{
+    align-items: center;
+    background-color: #D7E1DE;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    margin-top: 1rem;
+    justify-content: center;
+}
+legend{
+    background-color: #4d6d63;
+    border-radius: 0.375rem;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-variant: small-caps;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    padding: 0.35rem;
+    text-transform: capitalize;
+}
+label, input{
+    display: block;
+    text-align: center;
+}
+input{
+    text-align: right;
+}
+input, textarea, select{
+    box-sizing: border-box ;
+    border-radius: 0.25rem;
+    border: 1px solid #517167;
+    font-size: 1rem;
+    margin: 0.65rem 0;
+    padding: 0.4rem 0.5rem;
+    resize: vertical;
+    width: 27.5rem;
+}
+textarea {
+    height: 8rem;
+}
+input:focus, textarea:focus, select:focus{
+    background: #4d6d63;
+    color: #dae2dc;
+}
+fieldset:focus-within{
+    background: #a6c1b9;
+}
+/* Helpers */
+.checkbox-card{
+    display: inline-flex;
+    align-items: center;
+}
+.cbox-class{
+    width: auto;
+    margin-right: 0.2rem;
+    margin-left: 0.5rem;
+}
+.activities-fs{
+    align-items: normal;
+}
+.tyc-flex{
+    color: #dae2dc;
+    display: flex;
+    flex-direction: column;
+}
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-input{
+    padding: 0.5rem;
+    width: fit-content;
+    margin: 0 0.5rem;
+}
